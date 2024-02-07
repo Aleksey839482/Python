@@ -16,7 +16,7 @@ MAX_WEIGHT = 30000
 count = int(input('Введите количество арбузов: '))
 min_a, max_a = MAX_WEIGHT, MIN_WEIGHT
 for i in range(count):                                      # Можно не прописывать i так как это цикл ради цикла и i не используетя
-    arbuz = random.randint(MIN_WEIGHT, MAX_WEIGHT)                           # Может быть сгенерировано и 1 и 10
+    arbuz = random.randint(MIN_WEIGHT, MAX_WEIGHT)          # Может быть сгенерировано и 1 и 10
     print(arbuz, end = ' ')                                 # "end = ' '" - позволяет вывести в одну строчку "(\n) - это вывод с новой строки стоит по умолчанию"
     if arbuz > max_a:
         max_a = arbuz
