@@ -7,7 +7,7 @@
 # Выходные данные:
 # Программа должна вывести одно целое число - минимальное количество монеток, которые нужно перевернуть.
 
-coins = [0, 1, 1, 1, 0, 0]
+coins = [0, 0, 0, 0, 1, 1]
 # coins = 3
 
 # import random
@@ -22,14 +22,34 @@ coins = [0, 1, 1, 1, 0, 0]
 #         count += 1
 # else:
 #     print(f'\n{count}')
-
-
-GERB = 0
 RESHKA = 1
-count = 0
+GERB = 0
+count_r = 0
+count_g = 0
 
 for i in coins:
-    if coins[i] == RESHKA:
-        count += 1
+    if i == GERB:
+        count_g += 1
+    else:
+        count_r += 1
+if count_r > count_g or count_r == count_g:
+    print(count_g)
 else:
-    print(count)
+    print(count_r)
+
+
+# Типо идеал:
+
+# count_zero = 0
+# count_one = 0
+
+# for coin in coins:
+#     if coin == 0:
+#         count_zero += 1
+#     else:
+#         count_one += 1
+
+# if count_one > count_zero:
+#     print(count_zero)
+# else:
+#     print(count_one)
