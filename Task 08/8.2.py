@@ -1,4 +1,4 @@
-FILE_NAME = 'phone.txt'
+FILE_NAME = 'phone1.txt'
 ID = 'id'
 LAST_NAME = 'фамилия'
 FIRST_NAME = 'имя'
